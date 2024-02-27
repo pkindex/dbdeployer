@@ -1,5 +1,8 @@
 
 # replication crash-safe options
-master-info-repository=table
-relay-log-info-repository=table
+{% comment %} For reference, master-info-repository deprecated in 8.0.23: {% endcomment %}
+{% comment %} https://dev.mysql.com/doc/refman/8.0/en/replication-options-replica.html#sysvar_master_info_repository {% endcomment %}
+{% comment %} master-info-repository=table {% endcomment %}
+{% comment %} https://dev.mysql.com/doc/refman/8.0/en/replication-options-replica.html#sysvar_relay_log_info_file {% endcomment %}
+{% comment %} relay-log-info-repository=table {% endcomment %}
 relay-log-recovery=on
